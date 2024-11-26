@@ -1,2 +1,15 @@
-env
+deployment/env
 deployment/.env
+orchestration_logs
+./orchestration_logs/history
+orchestration_logs/history/runs
+orchestration_logs/logs
+orchestration_logs/storage
+orchestration_logs/history/runs/index.db
+orchestration_logs/logs/event.log
+orchestration_logs/history/runs.db
+deployment/orchestration/__pycache__
+orchestration_logs/logs/event.log
+orchestration_logs/history/runs/index.db
+orchestration_logs/logs/event.log
+orchestration_logs/history/runs.db

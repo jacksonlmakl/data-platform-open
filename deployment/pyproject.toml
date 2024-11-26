@@ -1,0 +1,14 @@
+[project]
+name = "python_scripts"
+version = "0.1.0"
+description = "Dagster project to run scripts."
+requires-python = ">=3.9"
+dependencies = [
+    "dagster",
+    "dagster-cloud",
+]
+
+[tool.dagster]
+module_name = "orchestration.definitions"
+project_name = "python_scripts"
+working_directory = "."
