@@ -1,3 +1,7 @@
 deployment/env
 deployment/.env
-orchestration
+orchestration_logs
+./orchestration_logs/history
+orchestration_logs/history/runs
+orchestration_logs/logs
+orchestration_logs/storage
