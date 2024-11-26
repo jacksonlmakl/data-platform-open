@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: python_scripts
+Version: 0.1.0
+Summary: Dagster project to run scripts.
+Requires-Python: >=3.9
+Requires-Dist: dagster
+Requires-Dist: dagster-cloud
