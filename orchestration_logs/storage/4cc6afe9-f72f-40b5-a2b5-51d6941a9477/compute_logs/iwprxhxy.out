@@ -1,8 +1,0 @@
-Running script: /Users/jackson.makl@dataiku.com/data-platform-open/deployment/scripts/__init__.py
-Output for __init__.py:
-
-Running script: /Users/jackson.makl@dataiku.com/data-platform-open/deployment/scripts/replication.py
-Output for replication.py:
-AKIAWPPO6G26XCSXBYFQ jackson-data
-Successfully uploaded data__1732657590_23547.parquet to bucket jackson-data
-
