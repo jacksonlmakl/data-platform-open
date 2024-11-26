@@ -35,6 +35,9 @@ else
     echo "DBT project 'gold' already exists. Skipping initialization."
 fi
 
+cd gold
+dbt run
+
 # # Step 5: Configure dbt using environment variables
 # echo "Setting up dbt profiles.yml..."
 # DBT_PROFILES_DIR="$DATABASE_DIR/.dbt"
