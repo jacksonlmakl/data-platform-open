@@ -10,7 +10,7 @@ load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../deployment/.
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 S3_BUCKET_NAME = os.getenv('S3_BUCKET_NAME')
-print(AWS_ACCESS_KEY_ID,S3_BUCKET_NAME)
+print('Loaded Environment Variables, Using Bucket: ', S3_BUCKET_NAME)
 # Validate environment variables
 if not all([AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, S3_BUCKET_NAME]):
     raise ValueError("One or more environment variables are missing!")
