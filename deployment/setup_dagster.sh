@@ -2,7 +2,7 @@
 
 # Exit immediately if a command exits with a non-zero status
 set -e
-
+source env/bin/activate
 # Load environment variables from .env file
 ENV_FILE="$(dirname "$0")/.env"
 if [ ! -f "$ENV_FILE" ]; then

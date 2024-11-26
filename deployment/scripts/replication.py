@@ -2,7 +2,7 @@ import pandas as pd
 import boto3
 import os
 from dotenv import load_dotenv
-
+from datetime import datetime 
 # Load environment variables
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../deployment/.env"))
 
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     upload_dict_as_parquet(
         data_dict=data,
         bucket_name=S3_BUCKET_NAME,
-        file_name="example.parquet",
+        file_name=f"data__{str(datetime.today().timestamp()).replace('.','_')}.parquet",
         aws_access_key=AWS_ACCESS_KEY_ID,
         aws_secret_access_key=AWS_SECRET_ACCESS_KEY
     )
