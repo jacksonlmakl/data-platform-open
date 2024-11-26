@@ -67,4 +67,4 @@ fi
 # Step 6: Success message
 echo "Setup complete. Virtual environment is ready at $VENV_DIR."
 
-# dagster-webserver &
+dagster-webserver &
