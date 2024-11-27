@@ -35,5 +35,4 @@ else
     echo "DBT project 'gold' already exists. Skipping initialization."
 fi
 
-cd gold
-dbt run
+cd gold && dbt run
