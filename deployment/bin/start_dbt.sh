@@ -37,25 +37,3 @@ fi
 
 cd gold
 dbt run
-
-# # Step 5: Configure dbt using environment variables
-# echo "Setting up dbt profiles.yml..."
-# DBT_PROFILES_DIR="$DATABASE_DIR/.dbt"
-# mkdir -p "$DBT_PROFILES_DIR"
-
-# cat <<EOF > "$DBT_PROFILES_DIR/profiles.yml"
-# default:
-#   target: dev
-#   outputs:
-#     dev:
-#       type: postgres
-#       host: ${DBT_HOST}
-#       user: ${DBT_USER}
-#       password: ${DBT_PASSWORD}
-#       port: ${DBT_PORT}
-#       dbname: ${DBT_DATABASE}
-#       schema: ${DBT_SCHEMA}
-#       threads: 4
-# EOF
-
-# echo "DBT setup complete. The 'gold' project is ready in $DATABASE_DIR."
